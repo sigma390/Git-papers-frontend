@@ -27,7 +27,7 @@ const Dashboard: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
   const [uploadProgress, setUploadProgress] = useState<number>(0);
 
-  const baseURL = 'http://localhost:3000/faculty';
+  const baseURL = 'https://git-papers-backend.vercel.app/faculty';
   const queryParams = new URLSearchParams(location.search);
   const scheme = queryParams.get('scheme');
 
