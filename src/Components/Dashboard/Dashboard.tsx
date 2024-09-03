@@ -3,7 +3,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { FaShare } from 'react-icons/fa';
 import { FiUpload } from 'react-icons/fi';
 import { MdDelete, MdDownload, MdOutlineCancel } from 'react-icons/md';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import pdfLogo from '../../assets/pdf-svgrepo-com.svg';
 
@@ -18,7 +18,6 @@ interface Paper {
 }
 
 const Dashboard: React.FC = () => {
-  const dispatch = useDispatch();
   const downloadCount = useSelector((state: any) => state.downloads.count);
   const location = useLocation();
   const [papers, setPapers] = useState<Paper[]>([]);

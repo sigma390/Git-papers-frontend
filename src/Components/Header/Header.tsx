@@ -1,6 +1,6 @@
 import { FaCircleUser } from 'react-icons/fa6';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link, Navigate, NavLink, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import logo from '../../assets/git.jpg';
 import { logout } from '../../store/authSlice';
 export const Header = () => {
