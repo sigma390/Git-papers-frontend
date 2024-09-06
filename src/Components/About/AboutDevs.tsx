@@ -1,56 +1,36 @@
-import pdpf from '../../assets/Pd.jpeg';
-import pratham from '../../assets/Pratham.jpg';
-import pratik from '../../assets/Pratik.jpeg';
+import pdpf from '../../assets/myImg.jpeg';
+
 const AboutDevs = () => {
   return (
-    <div className='m-10'>
+    <div className='m-10 flex flex-col justify-center items-center'>
       {/* Heading for About our Developers */}
-      <h1 className='text-3xl font-bold mb-6'>About our Developers</h1>
+      <h1 className='text-4xl font-bold mb-10 text-center'>
+        About Our Developers
+      </h1>
 
-      {/* Grid containing the cards */}
-      <div className='grid grid-cols-3 gap-6 mt-10'>
+      {/* Container for Cards */}
+      <div className='flex flex-wrap justify-center gap-8 mt-8'>
         {/* Card for Pranav Deshpande */}
-        <div className='card card-compact w-96 bg-base-100 shadow-2xl'>
-          <figure>
+        <div className='w-full max-w-xl bg-white shadow-lg rounded-lg overflow-hidden flex flex-col sm:flex-row'>
+          {/* Image on the left */}
+          <figure className='w-full sm:w-1/3 flex-shrink-0'>
             <img
               src={pdpf}
               alt='Pranav Profile Photo'
-              className='w-full max-h-72 object-contain'
+              className='w-full h-full object-cover'
             />
           </figure>
-          <div className='card-body'>
-            <h2 className='card-title'>Pranav Deshpande</h2>
-            <p>
-              Passionate Computer Science Engineer, Currently Working Remotely
-            </p>
-          </div>
-        </div>
 
-        {/* Empty divs for layout */}
-        <div className='card card-compact w-96 bg-base-100 shadow-2xl'>
-          <figure>
-            <img
-              src={pratik}
-              alt='Pratik Profile Photo'
-              className='w-full max-h-72 object-contain'
-            />
-          </figure>
-          <div className='card-body'>
-            <h2 className='card-title'>Pratik D</h2>
-            <p>Passionate Computer Science Engineer,</p>
-          </div>
-        </div>
-        <div className='card card-compact w-96 bg-base-100 shadow-2xl'>
-          <figure>
-            <img
-              src={pratham}
-              alt='Prathamesh Profile Photo'
-              className='w-full max-h-72 object-contain'
-            />
-          </figure>
-          <div className='card-body'>
-            <h2 className='card-title'>Prathamesh B</h2>
-            <p>Passionate Computer Science Engineer,and Entrepreneur</p>
+          {/* Information on the right */}
+          <div className='p-6 flex flex-col justify-center'>
+            <h2 className='text-2xl font-semibold mb-2 text-gray-800'>
+              Omkar Patil
+            </h2>
+            <p className='text-gray-600'>
+              Passionate Computer Science Engineer, currently looking for a
+              Career Opportunity with a keen interest in solving challenging
+              problems and developing innovative solutions.
+            </p>
           </div>
         </div>
       </div>
