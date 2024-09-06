@@ -25,7 +25,7 @@ const Schemes: React.FC = () => {
     (state: { auth: { isAuthenticated: boolean } }) =>
       state.auth.isAuthenticated
   );
-  const basePath = 'https://git-papers-backend.vercel.app/faculty';
+  const basePath = 'https://git-papers-backend-2.onrender.com/faculty';
 
   // Sort schemes by title
   items.sort((a, b) => {

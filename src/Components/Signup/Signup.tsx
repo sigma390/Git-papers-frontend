@@ -5,7 +5,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { object, string, ZodError } from 'zod';
 
-export const baseURL = 'https://git-papers-backend.vercel.app/user';
+export const baseURL = 'https://git-papers-backend-2.onrender.com/user';
 
 const Signup = () => {
   const [name, setName] = useState('');

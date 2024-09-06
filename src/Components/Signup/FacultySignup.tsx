@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { object, string, ZodError } from 'zod';
 import { loginSuccess } from '../../store/authSlice';
 
-export const baseURL = 'https://git-papers-backend.vercel.app/faculty';
+export const baseURL = 'https://git-papers-backend-2.onrender.com/faculty';
 
 const FacultySignup = () => {
   const [name, setName] = useState('');

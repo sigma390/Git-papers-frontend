@@ -26,7 +26,7 @@ const Papers: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
   const [uploadProgress, setUploadProgress] = useState<number>(0);
   const navigate = useNavigate();
-  const baseURL = 'https://git-papers-backend.vercel.app/faculty';
+  const baseURL = 'https://git-papers-backend-2.onrender.com/faculty';
   const queryParams = new URLSearchParams(location.search);
   const scheme = queryParams.get('scheme');
   const exam = queryParams.get('exam');

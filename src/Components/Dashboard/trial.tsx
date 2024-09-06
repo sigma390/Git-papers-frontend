@@ -12,7 +12,7 @@ interface UserSummary {
 
 const UserSummaryComponent: React.FC = () => {
   const [userSummary, setUserSummary] = useState<UserSummary | null>(null);
-  const baseURL = 'https://git-papers-backend.vercel.app/admin';
+  const baseURL = 'https://git-papers-backend-2.onrender.com/admin';
   const isAuthenticated = useSelector(
     (state: { auth: { isAuthenticated: boolean } }) =>
       state.auth.isAuthenticated

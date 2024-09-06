@@ -5,7 +5,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { object, string, ZodError } from 'zod';
 
-const baseURL = 'https://git-papers-backend.vercel.app/admin';
+const baseURL = 'https://git-papers-backend-2.onrender.com/admin';
 
 const ChangePassAdmin = () => {
   const location = useLocation();
