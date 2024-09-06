@@ -33,7 +33,7 @@ const Papers: React.FC = () => {
 
   const fetchPapers = useCallback(async () => {
     try {
-      const response = await axios.get<Paper[]>(`${baseURL}/papers`, {
+      const response = await axios.get<Paper[]>(baseURL + '/papers', {
         params: {
           scheme,
           exam, // Add this line to include the 'exam' parameter
@@ -72,7 +72,7 @@ const Papers: React.FC = () => {
     }
 
     try {
-      await axios.post(`${baseURL}/upload`, formData, {
+      await axios.post(baseURL + '/upload', formData, {
         headers: {
           authorization: `Bearer ${localStorage.getItem('token')}`,
           'Content-Type': 'multipart/form-data',
